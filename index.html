@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문이 있는 삶</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 data-lang="question_title">질문이 있는 삶</h1>
+        <p>“구하라 그러면 너희에게 주실 것이요…” (마태복음 7:7)</p>
+        <a href="question.html" class="button" data-lang="submit_button">💬 나의 질문으로 연결</a>
+        <button onclick="toggleLanguage()" data-lang="toggle_language">English</button>
+    </div>
+    <script src="assets/scripts/lang.js"></script>
+</body>
+</html>

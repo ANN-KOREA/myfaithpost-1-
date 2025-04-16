@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>희망을 찾는 신앙</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>희망을 찾는 신앙</h1>
+        <p>“소망 중에 즐거워하며 환난 중에 참으며…” (로마서 12:12)</p>
+        <a href="question.html" class="button">💬 나의 희망 기록하기</a>
+        <button onclick="toggleLanguage()" data-lang="toggle_language">English</button>
+    </div>
+    <script src="assets/scripts/lang.js"></script>
+</body>
+</html>
