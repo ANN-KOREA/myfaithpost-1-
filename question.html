@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문 입력</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 data-lang="question_title">🙏 당신의 질문을 남겨주세요</h1>
+        <form action="response.html" method="get">
+            <textarea name="q" rows="6" style="width:100%;" placeholder="여기에 질문을 입력하세요..."></textarea><br><br>
+            <button type="submit" data-lang="submit_button">제출</button>
+        </form>
+        <button onclick="toggleLanguage()" data-lang="toggle_language">English</button>
+    </div>
+    <script src="assets/scripts/lang.js"></script>
+</body>
+</html>

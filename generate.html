@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스터 생성기</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 data-lang="generator_title">포스터 생성기</h1>
+        <form id="posterForm">
+            <label data-lang="title_label">제목:</label><br>
+            <input type="text" id="title" required><br><br>
+            <label data-lang="verse_label">성경 구절:</label><br>
+            <textarea id="verse" rows="4" style="width:100%;" required></textarea><br><br>
+            <label data-lang="button_label">버튼 텍스트:</label><br>
+            <input type="text" id="buttonText" required><br><br>
+            <button type="submit" data-lang="generate_button">포스터 생성</button>
+        </form>
+        <button onclick="toggleLanguage()" data-lang="toggle_language">English</button>
+    </div>
+    <script src="assets/scripts/generate.js"></script>
+    <script src="assets/scripts/lang.js"></script>
+</body>
+</html>
